@@ -18,34 +18,36 @@ body{
 }
 .conteiner{
     background: #fff;
-    max-width: 640px;
+    max-width: 480px;
+    min-height: 500px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
 }
-form imput, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+.input-tarefa{
+    border: 1px solid rgb(145, 143, 143);
+    border-radius: 5px;
+    min-width: 250px;
+    padding: 3px 5px;
+    font-size: 15px;
+    
 }
-form imput{
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
+.input-tarefa:focus{
+    outline: 1px solid black;
 }
-form input:focus{
-    outline: 1px solid var(--primary-color);
-}
-form button{
-    border: none;
+.btn-tarefa, .apagar{
+    padding:  3px 8px;
     background: var(--primary-color);
     color: #fff;
-    font-size: 18px;
-    font-weight:700;
-    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 15px;
     cursor: pointer;
-    margin-top: 30px;
 }
-form button:hover {
-    background: var(--primary-color-darker);
+.btn-tarefa:hover, .apagar:hover {
+    background: rgb(23, 104, 122);
+    
 }
+
+
